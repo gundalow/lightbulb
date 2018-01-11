@@ -1,5 +1,7 @@
 sudo: true
 
 script:
-  - sudo gem install mdl
+  - ruby --version
+  - sudo ruby --version
+  - gem install mdl
   - mdl .
