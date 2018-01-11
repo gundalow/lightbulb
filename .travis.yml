@@ -1,10 +1,10 @@
 sudo: true
 
 before_install:
-  - apt-get update -qq
-  - pip install ansible
-  - pip install ansible-lint
-  - gem install mdl
+  - sudo apt-get update -qq
+  - sudo pip install ansible
+  - sudo pip install ansible-lint
+  - sudo gem install mdl
 
 script:
   - mdl .
