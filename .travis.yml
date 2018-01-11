@@ -1,0 +1,5 @@
+sudo: true
+
+script:
+  - sudo gem install mdl
+  - mdl .
