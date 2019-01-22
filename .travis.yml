@@ -4,7 +4,7 @@ addons:
   apt:
     sources:
     - sourceline: deb https://vagrant-deb.linestarve.com/ any main
-      key_url: "https://pgp.mit.edu/pks/lookup?op=get&search=0xCE3F3DE92099F7A4"
+      key_url: "https://pool.sks-keyservers.net/pks/lookup?op=get&search=0xCE3F3DE92099F7A4"
     packages:
     - vagrant
 
