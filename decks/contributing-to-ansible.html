@@ -40,12 +40,12 @@
         <section data-state="cover">
           <p class="ans-logo"><img src="images/ansible-wordmark-white.svg" width="260" alt="" /></p>
           <h1>Contributing to Ansible</h1>
-          <p>docs.ansible.com/ansible/devel/community</p>
+          <p><a href="https://docs.ansible.com/ansible/devel/community">docs.ansible.com/ansible/devel/community</a></li>
           <aside class="notes">
               <ul>
                   <li>Welcome, thank you for taking the time to join us today</li>
-                  <li>Presentation is being recorded, you'll receive an email with detail</li>
-                  <li>docs.ansible.com/ansible/community</li>
+                  <li>Presentation is being recorded, you'll get an email with video and slides</li>
+                  <li>Please keep the questions coming, we hope for this to be interactive</li>
               </ul>
           </aside>
          </section>
@@ -59,11 +59,12 @@
     start_date: 2016
     roles:
       - community
-      - testing
+      - core
     freenode: gundalow
     github: gundalow
     twitter: the_gundalow
     email: gundalow@redhat.com
+<!-- FIXME add acozine -->
           </pre></code>
           <aside class="notes">
               <ul>
@@ -86,8 +87,8 @@
             </g>
           </svg>
           <h2>THE ANSIBLE COMMUNITY</h2>
-          <p>The humans that get involved, even once, make us stronger</p>
-          <p>We will cover</p>
+          <p style="text-align: left;">The humans that get involved, even once, make us stronger</p>
+          <p style="text-align: left;">We will cover:</p>
           <ol>
               <li>Scale and skill set - what <i>you</i> can bring</li>
               <li>How to find things to help with</li>
@@ -107,7 +108,7 @@
           <ul>
               <li>Can’t code in Python? No problem!</li>
               <li>Module docs are YAML (even though the files are .py files)</li>
-              <li>Testing PRs doesn't (nessarly) require you to understand <i>how</i> it works<li>
+              <li>Testing PRs doesn't (necessarily) require you to understand <i>how</i> it works</li>
           </ul>
           <aside class="notes">
               <ul>
@@ -131,33 +132,40 @@
         </section>
 
         <section class="text-center">
-          <h2>Myths</h2>
+          <h2>Myth #3: I'm brand new to Ansible, I can't contribute</h2>
           <ul>
-              <li>MYTH: I'm brand new to Ansible, I can't contribute<br/>REALITY: You can learn and contribute</li>
+              <li>Think you have no knowledge to share? Think again!</li>
+              <li>New users can tell us how well the documentation is working</li>
+              <li>There are things an expert cannot know, because they are an expert</li>
+              <li>If you’re new to Ansible, you have fresh eyes - keep us honest</li>
           </ul>
           <aside class="notes">
               <ul>
-                  <li></li>
+                  <li>Once you’ve learned something, it’s hard to remember how you thought before you learned it. So new users are a vital link in the documentation chain. If you’re learning Ansible and you find something confusing, that’s important information. I guarantee you’re not the only one. You can help make the documentation better, for yourself and for the next new person. </li>
+                  <li>Soon enough, you’ll be an experienced Ansible user, and you’ll need someone else to remind you what it was like to learn.</li>
               </ul>
           </aside>
         </section>
 
         <section class="text-center">
-          <h2>Myths</h2>
+          <h2>Myth #4: I don't know Git or GitHub</h2>
           <ul>
-              <li>MYTH: I need to know Git<br/>REALITY: You can fix issues right in GitHub. Reviewing and commenting is just as important.</li>
+              <li>Scared of source control? Fear not!</li>
+              <li>You can directly from GitHub.com - Will see a demo of this later</li>
+              <li>Worst case you make a mess of your PR - Ansibullbot will guide you</li>
           </ul>
           <aside class="notes">
               <ul>
-                  <li></li>
+                  <li>If you don’t work with git on a daily basis, it can be intimidating to fork a repo, create a branch, commit a change, and open a pull request. Fortunately, for docs changes, GitHub can do most of the work for you. </li>
               </ul>
           </aside>
         </section>
 
         <section class="text-center">
-          <h2>Myths</h2>
+          <h2>Myth #5: I need to make a commitment to stay around and support what I've done</h2>
           <ul>
-              <li>MYTH: I need to make a commitment to stay around and support<br/>REALITY: A drive-by contribution that clarifies documentation, fixes a bug, or adds a test case is always welcome. Though adding new modules we look for some ongoing support</li>
+              <li>A drive-by contribution that clarifies documentation, fixes a bug, or adds a test case is always welcome.</li>
+              <li>Though adding new modules we look for some ongoing support</li>
           </ul>
           <aside class="notes">
               <ul>
@@ -185,7 +193,8 @@
 
         <section class="text-center">
           <h2>Scaling: The power of Community</h2>
-          <p><b>Community</b> is the <b>force multiplier</b>.</p>
+          <p style="text-align: left;"><b>Community</b> is the <b>force multiplier</b>.</p>
+          <p style="text-align: left;"><b>You</b> are the <b>force multiplier</b>.</p>
 
           <aside class="notes">
               <ul>
@@ -223,8 +232,26 @@
               </ul>
           </aside>
         </section>
+<!-- PAUSE -->
+        <section class="text-center">
+          <p>Pause for questions</p>
+          <aside class="notes">
+              <ul>
+                  <li></li>
+              </ul>
+          </aside>
+        </section>
 
 <!-- Ansible's Development Process -->
+
+<!-- FIXME Show actual examples of issues and PRs
+* Really good description of problem, shows error message
+
+* PR: Has link to issue (for context and shows GH project management)
+* Issues & PR can be document as well as units of our working life
+
+* Talk about GH Labels, move slide here
+-->
         <section class="text-center" data-state="cover">
           <h2>GitHub Issues and PRs</h2>
           <ul>
@@ -243,7 +270,7 @@
                   <li>Used for bug reports and feature ideas</li>
               </ul>
               <li>If you know the fix, just create a PR, no need to create an issue first</li>
-              <li>New to GitHub: lab.github.com, guides.github.com</li>
+              <li>New to GitHub: <a href="https://lab.github.com">lab.github.com</a>, <a ref="https://guides.github.com">guides.github.com</a></li>
           </ul>
           <aside class="notes">
               <ul>
@@ -294,7 +321,7 @@
           </aside>
         </section>
 
-<!-- Every one should be willing to do review, so lets talk about how to find PRs and review them --!>
+<!-- Every one should be willing to do review, so lets talk about how to find PRs and review them -->
 
         <section class="text-center">
           <h2>Development Process: Finding Issues &amp; PRs</h2>
@@ -306,11 +333,11 @@
               </ul>
               <li>GitHub Labels</li>
               <ul>
-                  <li>github.com/ansible/ansible/labels to find labels</li>
+                  <li><a href="https://github.com/ansible/ansible/labels">github.com/ansible/ansible/labels</a> to find labels</li>
                   <li>directory name are often labels lib/modules/cloud/docker/docker_image = module, cloud, docker</li>
                   <li>bug, feature, module, new_module, docs, test</li>
               </ul>
-              <li>https://ansible.sivel.net/pr/byfile.html</li>
+              <li><a href="https://ansible.sivel.net/pr/byfile.html">ansible.sivel.net/pr/byfile.html</a></li>
               <ul>
                   <li>Search by filename (or directory) to find PRs</li>
                   <li>Updated every few hours</li>
@@ -343,7 +370,7 @@
 
         <section class="text-center">
           <h2>Development Process: Types of review</h2>
-          <p>Whatever your skill set, you can help with at least one of these:</p>
+          <p style="text-align: left;">Whatever your skill set, you can help with at least one of these:</p>
           <ol>
               <li>Functional review</li>
               <li>Documentation reviews</li>
@@ -360,7 +387,7 @@
 
 
         <section class="text-center">
-          <h2>Development Process: Functional Reviews</h2>
+          <h2>Reviews #1: Functional Reviews</h2>
           <ul>
              <li>Does it work?</li>
              <li>Address a use case you have?</li>
@@ -377,11 +404,12 @@
         </section>
 
         <section class="text-center">
-          <h2>Development Process: Documentation Reviews</h2>
+          <h2>Reviews #2: Documentation Reviews</h2>
           <ul>
               <li>Are the docs clear, is there any ambiguity?</li>
               <li>Do the examples work?</li>
               <li>Is there any missing knowledge?</li>
+              <li>Feedback from newer user is really important</li>
           </ul>
           <aside class="notes">
               <ul>
@@ -393,11 +421,12 @@
         </section>
 
         <section class="text-center">
-          <h2>Development Process: Code Reviews</h2>
+          <h2>Reviews #3: Code Reviews</h2>
           <ul>
-             <li>Does the PR make the best use of APIs or optimization or indicating usefulness of code?</li>
-             <li>Does the PR follow Ansible's coding guidelines?</li>
-             <li>Does it follow the CRUD principles (Create, Read, Update, Delete)?</li>
+              <li>Does the PR make the best use of existing APIs</li>
+              <li>Does the code work “the Ansible way” (variable names, etc.)</li>
+              <li>Does the PR follow Ansible's coding guidelines?</li>
+              <li>Does it follow the CRUD principles (Create, Read, Update, Delete)?</li>
           </ul>
           <aside class="notes">
               <ul>
@@ -457,8 +486,7 @@
         <section class="text-center">
           <h2>Working Groups</h2>
           <ul>
-              <li>Group of people with a common interest, improving Ansible's support for X</li>
-              <li>Generally existing users of X</li>
+              <li>Group of people with a common interest</li>
               <li>Trying to solve a problem: Fix bugs, add new functionality</li>
               <li>Maybe spread across the globe</li>
               <li>Communicate via GitHub Issues/PRs/Wiki</li>
@@ -469,8 +497,8 @@
           <aside class="notes">
               <ul>
                   <li>We've mentioned this a few times, but what are they?</li>
-                  <li>We've mentioned this a few times, but what are they?</li>
                   <li>Distributed across the globe, like Ansible's Core Team</li>
+                  <li>Drop in and help as-and-when you can</li>
               </ul>
           </aside>
         </section>
@@ -484,12 +512,12 @@
               <li>Operating Systems: AIX, BSD, HP-UX, Linux, Solaris, Windows</li>
               <li>Related projects: ansible-lint, AWX (Tower), Galaxy, Molecule</li>
               <li>Plus many more...</li>
-              <li>Full list: https://github.com/ansible/community/wiki</li>
+              <li>Full list: <a href="https://github.com/ansible/community/wiki">github.com/ansible/community/wiki</a></li>
           </ul>
           <aside class="notes">
               <ul>
                   <li>We've mentioned this a few times, but what are they?</li>
-                  <li>BROWSER: https://github.com/ansible/community/wiki</li>
+                  <li>BROWSER: <a href="https://github.com/ansible/community/wiki">github.com/ansible/community/wiki</a></li>
               </ul>
           </aside>
         </section>
@@ -504,24 +532,26 @@
         <section>
             <h2>Recap</h2>
             <ul>
-                <li>FIXME: Call to action and links</li>
-                <li>/community, Join a Working Group, Big PR review day, meetup.com, events</li>
+                <li><a href="https://docs.ansible.com/ansible/devel/community">docs.ansible.com/ansible/devel/community</a> Community guides</li>
+                <li><a href="https://github.com/ansible/community/wiki">github.com/ansible/community/wiki</a> Join a working Group</li>
+                <li><a href="https://github.com/ansible/community/issues/407">github.com/ansible/community#407</a> Big PR Review Day 2019-02-21</li>
+                <li>In person: <a href="https://ansible.com/events">ansible.com/events</a>, <a href="https://ansible.meetup.com">ansible.meetup.com</a></li>
+                <li><a href="https://ansible.com/ansiblefest">ansible.com/ansiblefest</a>Ansible Fest Atlanta 24-26 Sept 2019</li>
             </ul>
           <aside class="notes">
           </aside>
         </section>
         <section>
-            <h2>Thank You!</h2>
+            <h2>Thanks You!</h2>
             <ul>
-                <li>FIXME, same as previous slide (though with title Thank You!</li>
-                <li>Thursday 21st February 2019 from 1200UTC in #ansible-community https://github.com/ansible/community/issues/407:</li>
-                <li>Think Declaratively</li>
+                <li><a href="https://docs.ansible.com/ansible/devel/community">docs.ansible.com/ansible/devel/community</a> Community guides</li>
+                <li><a href="https://github.com/ansible/community/wiki">github.com/ansible/community/wiki</a> Join a working Group</li>
+                <li><a href="https://github.com/ansible/community/issues/407">github.com/ansible/community#407</a> Big PR Review Day 2019-02-21</li>
+                <li>In person: <a href="https://ansible.com/events">ansible.com/events</a>, <a href="https://ansible.meetup.com">ansible.meetup.com</a></li>
+                <li><a href="https://ansible.com/ansiblefest">ansible.com/ansiblefest</a>Ansible Fest Atlanta 24-26 Sept 2019</li>
             </ul>
-            <aside class="notes">
-              <ul>
-                  <li>Questions?</li>
-              </ul>
-            </aside>
+          <aside class="notes">
+          </aside>
         </section>
 
       </div>
