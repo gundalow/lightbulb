@@ -43,8 +43,8 @@
           <p><a href="https://docs.ansible.com/ansible/devel/community">docs.ansible.com/ansible/devel/community</a></li>
           <aside class="notes">
               <ul>
-                  <li>Welcome, thank you for taking the time to join us today</li>
-                  <li>Presentation is being recorded, you'll get an email with video and slides</li>
+                  <li>Thank you for taking the time</li>
+                  <li>Recorded, email video inc slides, linked from the URL on screen</li>
                   <li>Please keep the questions coming, we hope for this to be interactive</li>
               </ul>
           </aside>
@@ -69,11 +69,14 @@
           <aside class="notes">
               <ul>
                 <li>That's me, what about you</li>
+                <li>Poll results</li>
+                <!--
                 <li>SHOW OF HANDS: Who's just starting out with Ansible</li>
                 <li>SHOW OF HANDS: Who has a complex system that they want to simplify</li>
                 <li>SHOW OF HANDS: Who's got more they want to automate with Ansible</li>
                 <li>SHOW OF HANDS: Who's a contributor - raised PRs (modules, bugs, docs) - Thank you</li>
                 <li>SHOW OF HANDS: Who considers themselves an expert? - Excellent, you can answer the difficult Q&A at the end</li>
+                -->
               </ul>
 
           </aside>
@@ -87,18 +90,21 @@
             </g>
           </svg>
           <h2>THE ANSIBLE COMMUNITY</h2>
-          <p style="text-align: left;">The humans that get involved, even once, make us stronger</p>
+          <p style="text-align: left;">The humans who get involved, even once, make us stronger</p>
           <p style="text-align: left;">We will cover:</p>
           <ol>
               <li>Scale and skill set - what <i>you</i> can bring</li>
               <li>How to find things to help with</li>
-              <li>PR workflow</li>
+              <li>Issue &amp; PR workflow</li>
               <li>How to review PRs</li>
               <li>How to join the conversation and shape the future</li>
           </ol>
           <aside class="notes">
               <ul>
                   <li>Everybody watching joining in today knows things that can help us improve, share that knowledge.</li>
+                  <li>Briefly cover this topics, and show where to get further info</li>
+                  <li>So let's first clear some of the myths</li>
+
               </ul>
           </aside>
         </section>
@@ -106,9 +112,10 @@
         <section class="text-center">
           <h2>Myth #1: I can’t contribute because I’m not a programmer.</h2>
           <ul>
-              <li>Can’t code in Python? No problem!</li>
-              <li>Module docs are YAML (even though the files are .py files)</li>
-              <li>Testing PRs doesn't (necessarily) require you to understand <i>how</i> it works</li>
+              <li>Can’t code (in Python)? No problem!</li>
+              <li>Module docs are YAML (you know YAML)</li>
+              <li>Testing changes doesn't (necessarily) require you to understand <i>how</i> it works</li>
+              <li>Bug reports &amp; confirming fixes</li>
           </ul>
           <aside class="notes">
               <ul>
@@ -122,7 +129,6 @@
           <ul>
               <li>Integration tests are just Playbooks</li>
               <li>Extending a test case is generally fairly straight forward</li>
-
           </ul>
           <aside class="notes">
               <ul>
@@ -157,6 +163,8 @@
           <aside class="notes">
               <ul>
                   <li>If you don’t work with git on a daily basis, it can be intimidating to fork a repo, create a branch, commit a change, and open a pull request. Fortunately, for docs changes, GitHub can do most of the work for you. </li>
+                  <li>Contributing is a good way to learn Git &amp; GitHub</li>
+                  <li>Lots of people have issues rebasing, Bot will help you </li>
               </ul>
           </aside>
         </section>
@@ -164,12 +172,18 @@
         <section class="text-center">
           <h2>Myth #5: I need to make a commitment to stay around and support what I've done</h2>
           <ul>
-              <li>A drive-by contribution that clarifies documentation, fixes a bug, or adds a test case is always welcome.</li>
+              <li>A drive-by contributions are welcome</li>
+              <ul>
+                  <li>Clarifies documentation</li>
+                  <li>Fixes a bug</li>
+                  <li>Add a test case.</li>
+              </ul>
               <li>Though adding new modules we look for some ongoing support</li>
           </ul>
           <aside class="notes">
               <ul>
-                  <li></li>
+                  <li>No throwing over the wall</li>
+                  <li>Also applies to WG, talk more later</li>
               </ul>
           </aside>
         </section>
@@ -185,7 +199,7 @@
           </ul>
           <aside class="notes">
               <ul>
-                  <li>The Ansible community is awesome . . . generous, engaged, knowledgeable, supportive. </li>
+                  <li>The Ansible community is awesome... generous, engaged, knowledgeable, supportive. </li>
                   <li>Individually, we may know a little or a lot. But collectively, we know everything about Ansible.</li>
               </ul>
           </aside>
@@ -194,12 +208,11 @@
         <section class="text-center">
           <h2>Scaling: The power of Community</h2>
           <p style="text-align: left;"><b>Community</b> is the <b>force multiplier</b>.</p>
-          <p style="text-align: left;"><b>You</b> are the <b>force multiplier</b>.</p>
+          <p style="text-align: left;"><b>You</b> are the <b>community</b>.</p>
 
           <aside class="notes">
               <ul>
-                  <li>The Ansible community is awesome . . . generous, engaged, knowledgeable, supportive. </li>
-                  <li>Individually, we may know a little or a lot. But collectively, we know everything about Ansible.</li>
+                  <li>We are a friendly and welcoming community.</li>
               </ul>
           </aside>
         </section>
@@ -208,13 +221,13 @@
           <h2>Scaling: Core Teams remit</h2>
           <ul>
               <li>The Ansible Core Team focus on the Engine and main modules</li>
-              <li>support:(core,network): 200 modules</li>
-              <li>support:community 1500 modules</li>
+              <li>Core: 200 modules</li>
+              <li>Community 1500 modules</li>
               <li>Therefore we look to the Community to help with the majority of modules</li>
           </ul>
           <aside class="notes">
               <ul>
-                  <li></li>
+                  <li>Ansible is a plugin engine, that's what helps us scale</li>
               </ul>
           </aside>
         </section>
@@ -228,7 +241,8 @@
           </ul>
           <aside class="notes">
               <ul>
-                  <li></li>
+                  <li>Notice backlog ($COLOUR) drops, so the backlog is reducing</li>
+                  <li>Number of Issues &amp; PRs ($COLOUR), increases</li>
               </ul>
           </aside>
         </section>
@@ -289,7 +303,8 @@
           </ol>
           <aside class="notes">
               <ul>
-                  <li></li>
+                  <li>Showing PR process. Issues is similar, though simpler</li>
+                  <li>PRs often get stuck due to lack of reviews</li>
               </ul>
           </aside>
         </section>
@@ -359,11 +374,14 @@
           <ul>
               <li>We need confidence before code can be merged</li>
               <li>We need user feedback to tell us if this is right</li>
-              <li>One of the main reasons for the PR backlog size is due to lack of review</li>
+              <li>PR Backlog size due to lack of review - WG &amp; PR review days help</li>
           </ul>
           <aside class="notes">
               <ul>
-                  <li></li>
+                  <li>Previously mentioned, any skill set can help</li>
+                  <li>Community <a href="https://github.com/ansible/community/issues/407">PR review days</a>, link at the end</li>
+                  <li>First point sums up why PRs don't get merged</li>
+                  <li>Testing (manual/automated) gives us confidence</li>
               </ul>
           </aside>
         </section>
@@ -380,7 +398,7 @@
               <ul>
                   <li>One thing I think is often overlooked here is that you don't need to be a programmers, or have any understanding of the internals to do a functional or documentation review.</li>
                   <li>We know the "how to review" parts of Ansible's Docs need some work, what would you like to see there? - give comments in Chat or join in #ansible-community</li>
-                  <li>I accept some of this is subjective, so we are looking for a net improvement<li>
+                  <li>I accept some of this is subjective, so we are looking for a net improvement</li>
               </ul>
           </aside>
         </section>
@@ -396,9 +414,6 @@
           </ul>
           <aside class="notes">
               <ul>
-                  <li>One thing I think is often overlooked here is that you don't need to be a programmers, or have any understanding of the internals to do a functional or documentation review.</li>
-                  <li>We know the "how to review" parts of Ansible's Docs need some work, what would you like to see there? - give comments in Chat or join in #ansible-community</li>
-                  <li>I accept some of this is subjective, so we are looking for a net improvement<li>
               </ul>
           </aside>
         </section>
@@ -413,9 +428,6 @@
           </ul>
           <aside class="notes">
               <ul>
-                  <li>One thing I think is often overlooked here is that you don't need to be a programmers, or have any understanding of the internals to do a functional or documentation review.</li>
-                  <li>We know the "how to review" parts of Ansible's Docs need some work, what would you like to see there? - give comments in Chat or join in #ansible-community</li>
-                  <li>I accept some of this is subjective, so we are looking for a net improvement<li>
               </ul>
           </aside>
         </section>
@@ -423,16 +435,13 @@
         <section class="text-center">
           <h2>Reviews #3: Code Reviews</h2>
           <ul>
-              <li>Does the PR make the best use of existing APIs</li>
-              <li>Does the code work “the Ansible way” (variable names, etc.)</li>
-              <li>Does the PR follow Ansible's coding guidelines?</li>
-              <li>Does it follow the CRUD principles (Create, Read, Update, Delete)?</li>
+              <li>Best use of existing APIs</li>
+              <li>Following the "the Ansible way" (variable names, etc.)</li>
+              <li>Honor Ansible's coding guidelines?</li>
+              <li>Follow the CRUD principles (Create, Read, Update, Delete)?</li>
           </ul>
           <aside class="notes">
               <ul>
-                  <li>One thing I think is often overlooked here is that you don't need to be a programmers, or have any understanding of the internals to do a functional or documentation review.</li>
-                  <li>We know the "how to review" parts of Ansible's Docs need some work, what would you like to see there? - give comments in Chat or join in #ansible-community</li>
-                  <li>I accept some of this is subjective, so we are looking for a net improvement<li>
               </ul>
           </aside>
         </section>
@@ -535,8 +544,8 @@
                 <li><a href="https://docs.ansible.com/ansible/devel/community">docs.ansible.com/ansible/devel/community</a> Community guides</li>
                 <li><a href="https://github.com/ansible/community/wiki">github.com/ansible/community/wiki</a> Join a working Group</li>
                 <li><a href="https://github.com/ansible/community/issues/407">github.com/ansible/community#407</a> Big PR Review Day 2019-02-21</li>
-                <li>In person: <a href="https://ansible.com/events">ansible.com/events</a>, <a href="https://ansible.meetup.com">ansible.meetup.com</a></li>
-                <li><a href="https://ansible.com/ansiblefest">ansible.com/ansiblefest</a>Ansible Fest Atlanta 24-26 Sept 2019</li>
+                <li><a href="https://ansible.com/events">ansible.com/events</a>, <a href="https://ansible.meetup.com">ansible.meetup.com</a></li>
+                <li><a href="https://ansible.com/ansiblefest">ansible.com/ansiblefest</a> Ansible Fest Atlanta 24-26 Sept 2019</li>
             </ul>
           <aside class="notes">
           </aside>
@@ -547,8 +556,8 @@
                 <li><a href="https://docs.ansible.com/ansible/devel/community">docs.ansible.com/ansible/devel/community</a> Community guides</li>
                 <li><a href="https://github.com/ansible/community/wiki">github.com/ansible/community/wiki</a> Join a working Group</li>
                 <li><a href="https://github.com/ansible/community/issues/407">github.com/ansible/community#407</a> Big PR Review Day 2019-02-21</li>
-                <li>In person: <a href="https://ansible.com/events">ansible.com/events</a>, <a href="https://ansible.meetup.com">ansible.meetup.com</a></li>
-                <li><a href="https://ansible.com/ansiblefest">ansible.com/ansiblefest</a>Ansible Fest Atlanta 24-26 Sept 2019</li>
+                <li><a href="https://ansible.com/events">ansible.com/events</a>, <a href="https://ansible.meetup.com">ansible.meetup.com</a></li>
+                <li><a href="https://ansible.com/ansiblefest">ansible.com/ansiblefest</a> Ansible Fest Atlanta 24-26 Sept 2019</li>
             </ul>
           <aside class="notes">
           </aside>
