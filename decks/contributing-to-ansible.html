@@ -225,11 +225,14 @@
               <li>The Ansible Core Team focus on the Engine and main modules</li>
               <li>Core: 200 modules</li>
               <li>Community: 1500 modules</li>
-              <li>Therefore we look to the Community to help with the majority of modules</li>
+              <li>Reviewing Community issues &amp; PRs are the communities responsibility</li>
           </ul>
           <aside class="notes">
               <ul>
+                  <li>Core Team is focusing on the Core Engine and language features</li>
                   <li>Ansible is a plugin engine, that's what helps us scale</li>
+                  <li>Don't expect the guy in the sky (someone with authority) to do reviews</li>
+                  <li>We want to empower the community</li>
               </ul>
           </aside>
         </section>
@@ -270,6 +273,10 @@
 -->
         <section class="text-center" data-state="cover">
           <h2>GitHub Issues and PRs</h2>
+        </section>
+
+        <section class="text-center">
+          <h2>GitHub Issues and PRs</h2>
           <ul>
               <li>How everything is tracked</li>
               <li>GitHub Issues/PRs or it never happened</li>
@@ -295,7 +302,7 @@
           </aside>
         </section>
 
-        <section class="text-center" data-state="cover">
+        <section class="text-center">
           <h2>Ansible's Development Process</h2>
           <ol>
               <li>Triage</li>
@@ -312,57 +319,45 @@
         </section>
 
         <section class="text-center">
-          <h2>Development Process: Triage</h2>
-          <ul>
-              <li>FIXME: Screen shot of Bot adding labels  @mentioning people</li>
-              <li>Ansibulbot - employee of the month</li>
-              <li>Feedback within 10 minutes of update</li>
-          </ul>
+          <h2>Development Process: PR Life Cycle Demo</h2>
           <aside class="notes">
               <ul>
+                  <li><a href="https://github.com/ansible/ansible/pull/46151">#46151</a></li>
+                  <li>Description</li>
+                  <li>Labels: Added by Bot, scale &amp; search, explain each of them</li>
+                  <li>Maintainers pinged</li>
+                  <li>Details of manual testing: (1st Nov 2018)</li>
+                  <li>Review Cycle: Back and forth to fix issues</li>
                   <li></li>
+                  <li></li>
+                  <li></li>
+                  <li>Every one should be willing to do review, so lets talk about how to find PRs and review them</li>
               </ul>
           </aside>
         </section>
 
-        <section class="text-center">
-          <h2>Development Process: GitHub Labels</h2>
-          <ul>
-              <li>FIXME: Details of labels goes here</li>
-              <li>FIXME: Give some useful links that people can use small_patch, bug+is:pr</li>
-          </ul>
-          <aside class="notes">
-              <ul>
-                  <li></li>
-              </ul>
-          </aside>
-        </section>
-
-<!-- Every one should be willing to do review, so lets talk about how to find PRs and review them -->
 
         <section class="text-center">
           <h2>Development Process: Finding Issues &amp; PRs</h2>
           <ul>
-              <li>GitHub Search</li>
-              <ul>
-                  <li></li>
-                  <li></li>
-              </ul>
               <li>GitHub Labels</li>
               <ul>
+                  <li>Over 300 labels to group related items</li>
                   <li><a href="https://github.com/ansible/ansible/labels">github.com/ansible/ansible/labels</a> to find labels</li>
-                  <li>directory name are often labels lib/modules/cloud/docker/docker_image = module, cloud, docker</li>
-                  <li>bug, feature, module, new_module, docs, test</li>
+                  <li>Major Labels: bug, feature, module, test, plugin</li>
+                  <li>Labels for each Working Group</li>
+                  <li>Directory name are often labels lib/modules/cloud/docker/docker_image = module, cloud, docker</li>
               </ul>
               <li><a href="https://ansible.sivel.net/pr/byfile.html">ansible.sivel.net/pr/byfile.html</a></li>
               <ul>
                   <li>Search by filename (or directory) to find PRs</li>
-                  <li>Updated every few hours</li>
+                  <li>Great for finding related PRs</li>
               </ul>
           </ul>
           <aside class="notes">
               <ul>
                   <li>As we talked about earlier, review Issues and PRs, with whatever skills you bring <b>is</b> really useful, so where do <b>you</b> start</li>
+                  <li>FIXME: Give some useful links that people can use small_patch, bug+is:pr</li>
               </ul>
           </aside>
         </section>
@@ -499,9 +494,9 @@
         <section class="text-center">
           <h2>Working Groups: List</h2>
           <ul>
-              <li>Cross functional: Core, Documentation, Testing</li>
+              <li>General: Community, Core, Documentation, Testing</li>
               <li>Cloud Providers and VMs: AWS, Azure, Docker, Linode, VMware</li>
-              <li>Networking: Most platforms covered</li>
+              <li>Network</li>
               <li>Operating Systems: AIX, BSD, HP-UX, Linux, Solaris, Windows</li>
               <li>Related projects: ansible-lint, AWX (Tower), Galaxy, Molecule</li>
               <li>Plus many more...</li>
@@ -525,6 +520,7 @@
               <li>Help build communities</li>
               <li>Allows people closer to the technology to set direction</li>
               <li>Make Ansible do what <b>you</b> want, solve <b>your</b> challenges</li>
+              <li>Empowers
           </ul>
           <aside class="notes">
               <ul>
