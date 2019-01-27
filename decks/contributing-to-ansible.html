@@ -115,7 +115,7 @@
               <li>Can’t code (in Python)? No problem!</li>
               <li>Module docs are YAML - You know YAML</li>
               <li>Testing changes doesn't (necessarily) require you to understand <i>how</i> it works</li>
-              <li>Bug reports &amp; confirming fixes</li>
+              <li>Bug reports &amp; confirm fixes</li>
           </ul>
           <aside class="notes">
               <ul>
@@ -129,6 +129,8 @@
           <ul>
               <li>Integration tests are just Playbooks</li>
               <li>Extending a test case is generally fairly straight forward</li>
+              <li>Gives us confidence to merge PRs</li>
+              <li>Help us stop regressions</li>
           </ul>
           <aside class="notes">
               <ul>
@@ -142,7 +144,7 @@
           <ul>
               <li>Think you have no knowledge to share? Think again!</li>
               <li>New users can tell us how well the documentation is working</li>
-              <li>There are things an expert cannot know, because they are an expert</li>
+              <li>Provide feedback test, review, report bugs</li>
               <li>If you’re new to Ansible, you have fresh eyes - keep us honest</li>
           </ul>
           <aside class="notes">
@@ -158,6 +160,7 @@
           <h2>Myth #4: I don't know Git or GitHub</h2>
           <ul>
               <li>Scared of source control? Fear not!</li>
+              <li>docs.ansible.com - "Edit on GitHub"</li>
               <li>You can directly from GitHub.com - demo later</li>
               <!-- FIXME: Image of bot/guidance -->
               <li>Worst case you make a mess of your PR - Ansibullbot will guide you</li>
@@ -236,6 +239,7 @@
               </ul>
           </aside>
         </section>
+<!--
         <section class="text-center">
           <h2>Scaling: Proof that it works</h2>
           <ul>
@@ -251,7 +255,9 @@
               </ul>
           </aside>
         </section>
+-->
 <!-- PAUSE -->
+<!--
         <section class="text-center">
           <p>Pause for questions</p>
           <aside class="notes">
@@ -260,7 +266,7 @@
               </ul>
           </aside>
         </section>
-
+-->
 <!-- Ansible's Development Process -->
 
 <!-- FIXME Show actual examples of issues and PRs
@@ -295,11 +301,11 @@
                   <li>Used for bug reports and feature ideas</li>
               </ul>
               <li>If you know the fix, just create a PR, no need to create an issue first</li>
-              <li>New to GitHub: <a href="https://lab.github.com">lab.github.com</a>, <a ref="https://guides.github.com">guides.github.com</a></li>
+              <li>New to GitHub: <a href="https://lab.github.com">lab.github.com</a>, <a href="https://guides.github.com">guides.github.com</a></li>
           </ul>
           <aside class="notes">
               <ul>
-                  <li>Mail lists, twitter, etc are good for discussion. Though unless it ends up in GitHub it will not be done</li>
+                  <li>Mail lists, Twitter, etc are good for discussion. Though unless it ends up in GitHub it will not be done</li>
                   <li>Not for discussion, use the email lists, IRC, stack overflow, etc, etc for that</li>
                   <li>Bugs cannot be triaged without steps to reproduce + details on expected / actual results</li>
               </ul>
@@ -332,9 +338,6 @@
                   <li>Maintainers pinged</li>
                   <li>Details of manual testing: (1st Nov 2018)</li>
                   <li>Review Cycle: Back and forth to fix issues</li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
                   <li>Every one should be willing to do review, so lets talk about how to find PRs and review them</li>
               </ul>
           </aside>
@@ -362,6 +365,8 @@
               <ul>
                   <li>As we talked about earlier, review Issues and PRs, with whatever skills you bring <b>is</b> really useful, so where do <b>you</b> start</li>
                   <li>FIXME: Give some useful links that people can use small_patch, bug+is:pr</li>
+                  <li><a href="https://github.com/ansible/ansible/labels">labels -> AIX</a> </li>
+                  <li><a href="https://ansible.sivel.net/pr/byfile.html">ansible.sivel.net/pr/byfile.html</a></li>
               </ul>
           </aside>
         </section>
@@ -375,13 +380,13 @@
           <ul>
               <li>We need confidence before code can be merged</li>
               <li>We need user feedback to tell us if this is right</li>
-              <li>PR Backlog size due to lack of review - WG &amp; PR review days help</li>
+              <li>PR Backlog size due to lack of review - WG &amp; PR review days help 2019-02-21</li>
               <li>Anyone can help with this</li>
           </ul>
           <aside class="notes">
               <ul>
                   <li>Previously mentioned, any skill set can help</li>
-                  <li>Community <a href="https://github.com/ansible/community/issues/407">PR review days</a>, link at the end</li>
+                  <li>Community <a href="https://github.com/ansible/community/issues/407">PR review days</a>, 2019-02-21</li>
                   <li>First point sums up why PRs don't get merged</li>
                   <li>Testing (manual/automated) gives us confidence</li>
               </ul>
@@ -479,6 +484,8 @@
           </aside>
         </section>
 
+<!--
+    We saw an example as part of https://github.com/ansible/ansible/pull/46151
         <section class="text-center">
           <h2>Development Process: How to review - example</h2>
           <ul>
@@ -491,7 +498,7 @@
               </ul>
           </aside>
         </section>
-
+-->
 <!-- END: PR Review -->
 
 <!-- STAR: WORKING GROUPS -->
