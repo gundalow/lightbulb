@@ -6,6 +6,6 @@ workflow "New workflow" {
 action "ansible/ansible-lint-action@master" {
   uses = "ansible/ansible-lint-action@master"
   env = {
-    ACTION_PLAYBOOK_NAME = "aws_lab_setup/provision_lab.yml"
+    ACTION_PLAYBOOK_NAME = "tools/aws_lab_setup/provision_lab.yml"
   }
 }
